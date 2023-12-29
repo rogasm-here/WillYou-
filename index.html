@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>will you?</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Tamanna, 
+
+            Do you remember the whispers of summer air back in April-May, the way they carried our laughter amongst the blooming bougainvillea? Remember how time spun on a sun-drenched carousel, each turn laced with your sunshine smile? We built castles in the sky, sketched dreams on dandelions, and etched each other's names into the bark of our favourite tree. It felt like forever, didn't it? 
+             
+            Then, life's tide tossed us apart, waves of misunderstanding washing over our fragile shores. Those months without you were an unending, muted landscape, the vibrant hues of our world bleached by absence. Every corner echoed with whispers of "what if," every sunrise a stark reminder of an empty space beside me. 
+             
+            But through the cracks of that emptiness, love found a way to bloom again. Drawn by an invisible thread, we found ourselves back in each other's orbit, constellations realigned, hearts beating in tandem once more. We fit together like the missing pieces of a puzzle, each curve and corner echoing the other. 
+             
+            You are the moon that guides my tides, the compass that directs my course. You are the laughter in my storms, the firefly in my darkest nights. With each beat of my heart, I love you deeper, fiercer, more fully than the last. 
+             
+            So, my love, with the setting sun as our witness and the stars as our audience, I stand before you, humbled by the privilege of having you in my life once again. In this moment, as I look into your eyes, I see a reflection of the love that has endured, matured, and evolved.
+            
+            And so, I pose a question that echoes the eternity I wish to spend by your side – a question that carries the weight of all the love and longing in my heart: 
+            Would you like to waltz with me through moonlit meadows, hand in hand, until the last embers of eternity fade? Would you let me be your sunrise, and you mine, as we weave a tapestry of love with every passing day? 
+            <span style="font-family: nunito; white-space: pre-wrap;
+            ">
+             Will you, my love, walk with me through this forever? </span>  
+           </h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
